@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encerta el número</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Encerta el número!</h1>
+        <button id="reset" disabled>Reinicia!</button>
+    </header>
+    <main>
+        <p>Busca el número!</p>
+        <div id="secret-number">?</div>
+        <p id="message">Comencem la partida...</p>
+        <div>
+            <label for="guess">Introdueix un número:</label>
+            <input type="number" id="guess" min="1" max="10">
+            <button id="check">Prova</button>
+        </div>
+        <p>Jugades: <span id="attempts">20</span></p>
+        <p>Total punts: <span id="best-score">-</span></p>
+        <p>Historial: <span id="history"></span></p>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
